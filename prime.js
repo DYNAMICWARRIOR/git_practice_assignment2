@@ -1,21 +1,21 @@
-let N=10
+function primecheck(N){
+
 for(let i=1; i<=N; i++)
 {
-	let count=0;
-	for(let j=1; j<=i; j++)
-	{
-		if(i%j==0)
+	
+		if(N%i==0)
 		{
 			count=0;
 		}
 	}
 	if(count==2)
 	{
-	console.log(i, "is Prime");
+	console.log(N, "is Prime");
 	}
 	else
 	{
-	console.log(i, "is not Prime");
+	console.log(N, "is not Prime");
 	}
 }
-}	
+	
+primecheck(10)
